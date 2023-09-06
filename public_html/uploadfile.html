@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webserv/uploadfile</title>
+    <link rel="icon" href="/images/favicon-32x32.ico">
+</head>
+<body style="background-color:rgb(67, 67, 67);">
+    <h1 style="text-align:center;font-size: 52px"><a href="/index" style="text-decoration: none;color: white">WEBSERV</a></h1>
+        <h2 style="text-align:center;color:rgb(255, 255, 255);font-size: 39px;">Upload a File</h2><br>
+        <form style="text-align:center;color:rgb(255, 255, 255);" action="/cgi-bin/uploadFile.pl" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+            <input type="submit" value="Upload File" name="submit">
+        </form>
+        <br><br><h2 style="text-align:center;color:rgb(255, 255, 255);font-size: 39px;">Upload a File</h2><br>
+        <form style="text-align:center;color:rgb(255, 255, 255);" action="/uploads" method="post" enctype="text/plain">
+            <input type="submit" value="Upload File" name="file_name">
+        </form>
+</body>
+</html>

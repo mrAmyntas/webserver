@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webserv/form</title>
+    <link rel="icon" href="/images/favicon-32x32.ico">
+</head>
+<body style="background-color:rgb(67, 67, 67);">
+    <h1 style="text-align:center;font-size: 52px"><a href="/index" style="text-decoration: none;color: white">WEBSERV</a></h1>
+        <h2 style="text-align:center;color:rgb(255, 255, 255);font-size: 39px;">Form using GET</h2><br>
+    <form style="text-align:center;" action="/cgi-bin/uploadForm.pl" method="get">
+        <label style="color: white" for="fname">First name (max 15 characters):</label><br>
+            <input type="text" id="fname" name="fname" maxlength="15" size="20"><br><br>
+        <label style="color: white" for="lname">Last name (max 15 characters):</label><br>
+            <input type="text" id="lname" name="lname" maxlength="15" size="20"><br><br>
+        <label style="color: white" for="message">Message (max 256 characters):</label><br>
+            <textarea maxlength="256" id="message" name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+      <br><br><h2 style="text-align:center;color:rgb(255, 255, 255);font-size: 39px;">Form using POST</h2><br>
+      <form style="text-align:center;" action="/cgi-bin/uploadForm.pl" method="post">
+        <label style="color: white" for="fname">First name (max 15 characters):</label><br>
+            <input type="text" id="fname" name="fname" maxlength="15" size="20"><br><br>
+        <label style="color: white" for="lname">Last name (max 15 characters):</label><br>
+            <input type="text" id="lname" name="lname" maxlength="15" size="20"><br><br>
+        <label style="color: white" for="message">Message (max 256 characters):</label><br>
+            <textarea maxlength="256" id="message" name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+</body>
+</html>

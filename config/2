@@ -1,0 +1,14 @@
+{
+	listen 8003
+	
+	location / {
+		redirect https://google.com
+	}
+}
+{
+	listen 8004
+	location / {
+		redirect https://bing.com
+	}
+
+}
